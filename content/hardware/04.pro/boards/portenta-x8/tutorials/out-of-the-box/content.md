@@ -62,7 +62,9 @@ And set your new factory name.
 ![Name your factory](assets/x8-oob-factory-name.png)
 
 Click register, now you will get a code that you need to paste into your factory page by opening [Arduino Create Cloud](https://create.arduino.cc) in your browser and click the "Portenta X8 Board Manager" inside the integrations section.
+
 ![Complete factory page](assets/x8-oob-factory-register.png)
+
 ![Arduino Cloud integration](assets/cloud-main.png)
 
 Once it is completed the factory button will turn green.
@@ -77,7 +79,8 @@ You have plenty of ways to communicate with your board, be it wirelessly or with
 ### ADB
 
 First of all make sure you have the latest **Mbed OS Portenta Core**, which contains the adb program.
-You can go to its directory inside the **Arduino15/packages/arduino/tools/adb/32.0.0**. To check the tool you can use your teminal and type `adb`, you should get feedback from the tool when typing this.
+
+You can go to its directory inside the **Arduino15/packages/arduino/tools/adb/32.0.0**. To check the tool you can use your terminal and type `adb`, you should get feedback from the tool when typing this.
 
 To know the list of devices that can be accessed type `adb devices`.
 
@@ -90,6 +93,7 @@ SSH is commonly used for remote control on different kinds of devices running di
 To communicate with your board, you will need to know the IP of it, and just type `ssh fio@<IP>`, then the terminal workaround should be the same as ADB. The password is `fio`.
 
 ![SSH connection](assets/ssh-connection.png)
+
 As it is a linux device, you can do normal stuff like creating files, changing directory, etc.
 
 To gain admin (root) access, type `sudo su -` and the password is `fio`  after that the terminal prefix should turn red.
@@ -110,4 +114,4 @@ Make sure you have the latest mbed Core and as every other board you can select 
 
 And click compile and upload.
 
-***Make sure you don't share GPIOs on the linux side and the Arduino sketch, this will avoid possible errors***
+***Make sure you don't share GPIOs on the linux side and the Arduino sketch, this will avoid possible errors.***
